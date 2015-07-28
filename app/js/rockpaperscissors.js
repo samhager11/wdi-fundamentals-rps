@@ -83,10 +83,7 @@ function playToFive() {
         }
     console.log('Player chose ' + playerMove +' while Computer chose ' + computerMove + '.');
     console.log('The score is currently ' + playerWins +' to ' +computerWins + '.');
-    return [playerWins, computerWins];
 }
-    while ((playerWins >= 5 || computerWins >=5)){
-         return [playerWins, computerWins];
-    }
+   return [playerWins, computerWins];   
 }
 

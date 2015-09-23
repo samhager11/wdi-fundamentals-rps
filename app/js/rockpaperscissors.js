@@ -72,6 +72,7 @@ function playToFive() {
     // Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.
     
     while ((playerWins <5) && (computerWins <5)) {
+//Should the getMove and getWinner functions be included in the loop?
 
         if (winner==='player') {
             playerWins += 1

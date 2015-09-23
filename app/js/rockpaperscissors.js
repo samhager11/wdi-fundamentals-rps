@@ -4,7 +4,7 @@
 'use strict';
 
 function getInput() {
-    console.log("Please choose either 'rock', 'paper', or 'scissors'.")
+    console.log("Please choose either 'rock', 'paper', or 'scissors'.");
     return prompt();
 }
 function randomPlay() {
@@ -70,9 +70,14 @@ function playToFive() {
     var computerMove = getComputerMove();
     var winner = getWinner(playerMove, computerMove);
     // Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.
-    
+    // This function should continue to play Rock Paper Scissors until either the
+  // player or the computer has won five times.
+  // After each 'round', display some text in the console indicating who played
+  // what, who won, and what the current scoreboard looks like.
+  // For example,
+  //  console.log('Player chose ' + playerMove + ' while Computer chose ' + computerMove);
+  //  console.log('The score is currently ' + playerWins + ' to ' + computerWins + '\n');
     while ((playerWins <5) && (computerWins <5)) {
-//Should the getMove and getWinner functions be included in the loop?
 
         if (winner==='player') {
             playerWins += 1
